@@ -25,18 +25,11 @@
 }
 body{
     margin: 0 0 0 0;
-    /* min-width: 500px; */
-    /* overflow: hidden; */
 
 }
 section{
     position: relative;
 }
-
-/* header{
-    min-height: 35px;
-    height: 0vh;
-} */
 
 nav{
     background: var(--color3);
@@ -163,6 +156,7 @@ nav ul li a {
 
 .contact{
     background: var(--color4);
+    min-height: 343px;
     display: flex;
     align-items: center;
     justify-content: center;
