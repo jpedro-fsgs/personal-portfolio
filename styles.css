@@ -160,7 +160,7 @@ nav ul li a {
     display: flex;
     justify-content:left;
 }
-.language-project-icon>img{
+.language-project-icon img{
     width: 35px;
 
 }
