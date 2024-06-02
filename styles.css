@@ -1,4 +1,4 @@
-:root{
+:root {
     --color2: #161853;
     --color4: #292C6D;
     --color1: #FAEDF0;
@@ -6,6 +6,7 @@
     --fonte1: "Cabin", sans-serif;
     --fonte2: "Cabin", sans-serif;
 }
+
 /* :root{
     --color2: #5F374B;
     --color4: #430A5D;
@@ -20,18 +21,21 @@
         scroll-behavior: smooth;
     }
 }
-*{
+
+* {
     text-decoration: none;
 }
-body{
+
+body {
     margin: 0 0 0 0;
 
 }
-section{
+
+section {
     position: relative;
 }
 
-nav{
+nav {
     background: var(--color3);
     min-height: 5vh;
     position: fixed;
@@ -40,24 +44,28 @@ nav{
     padding: 0;
     z-index: 1;
 }
-nav>ul{
+
+nav>ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
     justify-content: right;
 }
-nav>ul>li{
+
+nav>ul>li {
     margin-right: 3vw;
     margin-top: 0.5vh;
 }
+
 nav ul li a {
     color: var(--color1);
     font-family: var(--fonte1);
     font-size: 3vh;
     font-weight: bolder;
 }
-.welcome-section{
+
+.welcome-section {
     display: flex;
     top: 0;
     background: var(--color4);
@@ -67,34 +75,43 @@ nav ul li a {
     align-items: center;
 }
 
-.welcome-title{
+.welcome-title {
     display: block;
     text-align: right;
 }
-.welcome-title>h1{
+
+.welcome-title>h1 {
     color: var(--color1);
     font-size: 5rem;
     font-family: var(--fonte1);
     margin: 0;
 
 }
-@media(max-width: 630px){
-    .welcome-title span{
+
+@media(max-width: 630px) {
+    .welcome-title span {
         display: block;
     }
 }
-.subtitle{
+@media(max-width: 390px) {
+    .welcome-title span {
+        font-size: 4rem;
+    }
+}
+
+.subtitle {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
     margin: 0;
 
 }
-.language-icon{
+
+.language-icon {
     width: 30px;
 }
 
-.subtitle>p{
+.subtitle>p {
     color: var(--color3);
     text-align: center;
     font-size: 2rem;
@@ -103,77 +120,83 @@ nav ul li a {
     margin: 0;
 }
 
-.projects{
+.projects {
     background: var(--color2);
     margin: none;
     width: 100%;
     min-height: 100vh;
     text-align: center;
-    display:block;
-    
+    display: block;
+    justify-content: center;
+
 }
 
-.projects-grid{
-    /* width: 100%; */
-    /* padding: 0 40px 0 40px; */
+.projects-grid {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
 
-}   
-.project-section-title{
+}
+
+.project-section-title {
     color: var(--color1);
     font-size: 3rem;
     font-family: var(--fonte1);
     margin: 0;
     padding: 7rem 2rem;
 }
-.project-tile{
+
+.project-tile {
     background: var(--color3);
     width: 100%;
     max-width: 350px;
     border-radius: 15px;
     margin: 20px;
 }
-.project-img{
+
+.project-img {
     width: 100%;
     max-width: 350px;
     height: 300px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
-    
 }
 
-.project-tile:hover{
+.project-tile:hover {
     transform: scale(1.1);
     transition: 0.5s transform;
 }
 
-.project-img-n-text{
-    display: flex;
-    margin-left: 15px;
-    
-}
-.language-project-icon{
-    display: flex;
-    justify-content:left;
-}
-.language-project-icon>img{
-    width: 35px;
-
-}
-.project-img-n-text>p{
+.project-img-n-text {
     display: flex;
     width: 100%;
-    padding-left: 25%;
+    margin: 0 5%;
+}
+
+.language-project-icon {
+    display: flex;
+    gap: 3%;
+}
+
+.language-project-icon>img {
+    width: 35px;
+}
+
+.language-project-text {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    padding-right: 15%;
+
     color: var(--color1);
     font-family: var(--fonte2);
     font-size: 1.2rem;
 }
 
-.contact{
+.contact {
     background: var(--color4);
     min-height: 343px;
     display: flex;
@@ -181,31 +204,34 @@ nav ul li a {
     justify-content: center;
     height: 93vh;
 }
-.social-medias{
+
+.social-medias {
     justify-content: space-evenly;
     gap: 80px;
 }
-.network{
+
+.network {
     display: flex;
     gap: 10px;
 }
 
-.network-icon{
+.network-icon {
     width: 50px;
 }
 
-.network-title{
+.network-title {
     font-family: var(--fonte1);
     font-size: 2.5rem;
     color: var(--color1);
-    
+
 }
-.filter{
+
+.filter {
     /* filter: invert(100%) sepia(21%) saturate(7250%) hue-rotate(300deg) brightness(128%) contrast(87%); */
     filter: invert(96%) sepia(4%) saturate(730%) hue-rotate(291deg) brightness(92%) contrast(113%);
 }
 
-footer{
+footer {
     background: var(--color4);
     display: flex;
     align-items: center;
@@ -215,7 +241,8 @@ footer{
     height: 7vh;
     z-index: 1;
 }
-footer>p{
+
+footer>p {
     color: var(--color1);
     font-family: var(--fonte2);
     padding-left: 20px;
